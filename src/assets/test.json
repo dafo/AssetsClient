@@ -1,0 +1,382 @@
+{
+  "view": {
+    "id": "d5aa2be8-f161-444f-e2d5-08d96960bafb",
+    "name": "Master View",
+    "isHomeScreen": true,
+    "layout": {
+      "mode": 1,
+      "direction": 0,
+      "wrap": 0,
+      "justifyContent": 0,
+      "alignItems": 3,
+      "alignContent": 0,
+      "overflow": 0
+    },
+    "childViews": [],
+    "children": [
+      {
+        "id": "93046209-d22b-4bb9-8a50-197103b044a6",
+        "name": "",
+        "libraryId": "IGDSC.IAB",
+        "definitionId": "grid_FAKE_#0",
+        "actions": [],
+        "properties": [
+          {
+            "id": "grid_FAKE_#1",
+            "name": "data",
+            "value": null,
+            "valueType": "ref",
+            "propertyType": 0,
+            "dataSourceId": "5e9ea03d-1f4d-4e03-a833-08d966fcd455",
+            "tableId": "2d567fe6-c95d-43cc-f435-08d966fcd44b"
+          },
+          {
+            "id": "grid_FAKE_#2",
+            "name": "autoGenerate",
+            "value": false,
+            "valueType": "boolean",
+            "propertyType": 0
+          },
+          {
+            "id": "grid_FAKE_#3",
+            "name": "width",
+            "value": "500px",
+            "valueType": "string",
+            "propertyType": 0
+          },
+          {
+            "id": "grid_FAKE_#4",
+            "name": "height",
+            "value": "200px",
+            "valueType": "string",
+            "propertyType": 0
+          }
+        ],
+        "position": {
+          "mode": 0,
+          "top": null,
+          "left": null,
+          "right": null,
+          "bottom": null,
+          "horizontalMiddle": null,
+          "verticalMiddle": null
+        },
+        "size": {
+          "width": "500px",
+          "height": "200px",
+          "minWidth": "50px",
+          "minHeight": "50px",
+          "maxWidth": null,
+          "maxHeight": null
+        },
+        "margin": null,
+        "padding": null,
+        "layout": null,
+        "itemLayout": {
+          "mode": 1,
+          "alignSelf": null,
+          "justifySelf": null,
+          "grow": 0,
+          "shrink": 0,
+          "basis": "auto"
+        },
+        "iterator": null,
+        "content": null,
+        "hidden": false,
+        "styles": [],
+        "children": [
+          {
+            "id": "54e04d4c-1055-44d7-851d-0fb43e7698a4",
+            "name": "categoryID",
+            "libraryId": "IGDSC.IAB",
+            "definitionId": "grid_FAKE_#1",
+            "actions": [],
+            "properties": [
+              {
+                "id": "grid_FAKE_#1_FAKE_#1",
+                "name": "field",
+                "value": "categoryID",
+                "valueType": "string",
+                "propertyType": 0
+              },
+              {
+                "id": "grid_FAKE_#1_FAKE_#2",
+                "name": "header",
+                "value": "categoryID",
+                "valueType": "string",
+                "propertyType": 0
+              },
+              {
+                "id": "grid_FAKE_#1_FAKE_#3",
+                "name": "title",
+                "value": "categoryID",
+                "valueType": "string",
+                "propertyType": 0
+              },
+              {
+                "id": "grid_FAKE_#1_FAKE_#4",
+                "name": "dataType",
+                "value": "number",
+                "valueType": "string",
+                "propertyType": 0
+              }
+            ],
+            "position": {
+              "mode": 0,
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": null,
+              "horizontalMiddle": null,
+              "verticalMiddle": null
+            },
+            "size": {
+              "width": "500px",
+              "height": "200px",
+              "minWidth": "50px",
+              "minHeight": "50px",
+              "maxWidth": null,
+              "maxHeight": null
+            },
+            "margin": null,
+            "padding": null,
+            "layout": null,
+            "itemLayout": null,
+            "iterator": null,
+            "content": null,
+            "hidden": false,
+            "styles": [],
+            "children": []
+          },
+          {
+            "id": "3f75302e-1a2e-4a1d-a56d-ca84382e9c3d",
+            "name": "description",
+            "libraryId": "IGDSC.IAB",
+            "definitionId": "grid_FAKE_#1",
+            "actions": [],
+            "properties": [
+              {
+                "id": "grid_FAKE_#1_FAKE_#1",
+                "name": "field",
+                "value": "description",
+                "valueType": "string",
+                "propertyType": 0
+              },
+              {
+                "id": "grid_FAKE_#1_FAKE_#2",
+                "name": "header",
+                "value": "description",
+                "valueType": "string",
+                "propertyType": 0
+              },
+              {
+                "id": "grid_FAKE_#1_FAKE_#3",
+                "name": "title",
+                "value": "description",
+                "valueType": "string",
+                "propertyType": 0
+              },
+              {
+                "id": "grid_FAKE_#1_FAKE_#4",
+                "name": "dataType",
+                "value": "string",
+                "valueType": "string",
+                "propertyType": 0
+              }
+            ],
+            "position": {
+              "mode": 0,
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": null,
+              "horizontalMiddle": null,
+              "verticalMiddle": null
+            },
+            "size": {
+              "width": "500px",
+              "height": "200px",
+              "minWidth": "50px",
+              "minHeight": "50px",
+              "maxWidth": null,
+              "maxHeight": null
+            },
+            "margin": null,
+            "padding": null,
+            "layout": null,
+            "itemLayout": null,
+            "iterator": null,
+            "content": null,
+            "hidden": false,
+            "styles": [],
+            "children": []
+          },
+          {
+            "id": "d5d0e3c7-1caf-42f1-aeef-222644fb5de7",
+            "name": "name",
+            "libraryId": "IGDSC.IAB",
+            "definitionId": "grid_FAKE_#1",
+            "actions": [],
+            "properties": [
+              {
+                "id": "grid_FAKE_#1_FAKE_#1",
+                "name": "field",
+                "value": "name",
+                "valueType": "string",
+                "propertyType": 0
+              },
+              {
+                "id": "grid_FAKE_#1_FAKE_#2",
+                "name": "header",
+                "value": "name",
+                "valueType": "string",
+                "propertyType": 0
+              },
+              {
+                "id": "grid_FAKE_#1_FAKE_#3",
+                "name": "title",
+                "value": "name",
+                "valueType": "string",
+                "propertyType": 0
+              },
+              {
+                "id": "grid_FAKE_#1_FAKE_#4",
+                "name": "dataType",
+                "value": "string",
+                "valueType": "string",
+                "propertyType": 0
+              }
+            ],
+            "position": {
+              "mode": 0,
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": null,
+              "horizontalMiddle": null,
+              "verticalMiddle": null
+            },
+            "size": {
+              "width": "500px",
+              "height": "200px",
+              "minWidth": "50px",
+              "minHeight": "50px",
+              "maxWidth": null,
+              "maxHeight": null
+            },
+            "margin": null,
+            "padding": null,
+            "layout": null,
+            "itemLayout": null,
+            "iterator": null,
+            "content": null,
+            "hidden": false,
+            "styles": [],
+            "children": []
+          }
+        ]
+      }
+    ],
+    "styles": []
+  },
+  "dataSources": [
+    {
+      "id": "5e9ea03d-1f4d-4e03-a833-08d966fcd455",
+      "name": "Northwind",
+      "dataUrl": "",
+      "schema": {
+        "databaseName": "Northwind",
+        "url": "",
+        "tables": [
+          {
+            "tableId": "2d567fe6-c95d-43cc-f435-08d966fcd44b",
+            "tableName": "Categories",
+            "dataUrl": "https://localhost:44381/api/datasources/5e9ea03d-1f4d-4e03-a833-08d966fcd455/tables/MG5iZDVyY2lsYTIjY2F0ZWdvcmllcy5qc29u",
+            "columns": [
+              {
+                "columnName": "categoryID",
+                "dataType": 2
+              },
+              {
+                "columnName": "description",
+                "dataType": 0
+              },
+              {
+                "columnName": "name",
+                "dataType": 0
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "libraries": [
+    {
+      "id": "IGDSC.IAB",
+      "name": "Infragistics Components",
+      "baseLibraryId": "",
+      "packageName": "igniteui-angular",
+      "themes": [],
+      "components": [
+        {
+          "id": "grid_FAKE_#0",
+          "name": "Grid",
+          "group": "Grids & List",
+          "keywords": "table, data, record, column",
+          "module": "IgxGridModule",
+          "selector": "igx-grid",
+          "theme": "",
+          "layoutRules": {
+            "isViewsContainer": false,
+            "initialSize": {
+              "width": "500px",
+              "height": "200px",
+              "minWidth": "50px",
+              "minHeight": "50px",
+              "maxWidth": null,
+              "maxHeight": null
+            }
+          },
+          "componentDependencies": [],
+          "properties": [],
+          "resizable": true,
+          "positionChildren": false,
+          "resizableChildren": false,
+          "allowAnyChildren": false,
+          "allowedChildren": [],
+          "childComponents": []
+        },
+        {
+          "id": "grid_FAKE_#1",
+          "name": "igx-column",
+          "group": "Grids & List",
+          "keywords": "table, data, record, column",
+          "module": "IgxGridModule",
+          "selector": "igx-column",
+          "theme": "",
+          "layoutRules": {
+            "isViewsContainer": false,
+            "initialSize": {
+              "width": "500px",
+              "height": "200px",
+              "minWidth": "50px",
+              "minHeight": "50px",
+              "maxWidth": null,
+              "maxHeight": null
+            }
+          },
+          "componentDependencies": [],
+          "properties": [],
+          "resizable": true,
+          "positionChildren": false,
+          "resizableChildren": false,
+          "allowAnyChildren": false,
+          "allowedChildren": [],
+          "childComponents": []
+        }
+      ],
+      "platform": 0
+    }
+  ]
+}

@@ -1,48 +1,43 @@
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
+import { Component } from '@angular/core';
+import { application } from 'src/assets/application';
 
 @Component({
   selector: 'app-upload',
   templateUrl: './upload.component.html',
   styleUrls: ['./upload.component.scss']
 })
-export class UploadComponent implements OnInit {
+export class UploadComponent {
+  private SERVER_URL = 'https://localhost:44372/api/generate/InternalAppAssets';
+  // private SERVER_URL = 'https://localhost:44356/home/MoreUpload';        // test app
 
-  SERVER_URL = "https://localhost:44372/api/Generate/InternalAppAssets";
-  uploadForm!: FormGroup;
-  text: string = '';
+  constructor(private httpClient: HttpClient) { }
 
-  constructor(private formBuilder: FormBuilder, private httpClient: HttpClient) { }
+  onSubmit(e: any) {
+    e.preventDefault();
+    const files = (document.querySelector('[type=file]') as any)?.files;
+    if (files?.length > 0) {
+      const formData = new FormData();
+      formData.append(
+        'App',
+        new Blob([JSON.stringify(application)], { type: 'application/json' }),
+        'Application');
 
-  ngOnInit(): void {
-    this.uploadForm = this.formBuilder.group({
-      profile: ['']
-    });
-
-    let request = new XMLHttpRequest();
-    request.open("GET", "http://localhost/assets/data/application.json", false);
-    request.send(null);
-    this.text = JSON.stringify(request.responseText);
-  }
-
-  onFileSelect(event: any) {
-    if (event.target.files.length > 0) {
-      const file = event.target.files[0];
-      this.uploadForm.get('profile')?.setValue(file);
+      for (let index = 0; index < files.length; index++) {
+        const file = files[index];
+        formData.append('Assets', file, file.name);
+      }
+      this.httpClient.post<any>(this.SERVER_URL, formData).subscribe(
+        (res) => console.log(res),
+        (err) => console.log(err)
+      );
+    } else {
+      this.httpClient.post<any>(this.SERVER_URL, application).subscribe(
+        (res) => console.log(res),
+        (err) => console.log(err)
+      );
     }
   }
-
-  onSubmit() {
-    const formData = new FormData();
-    formData.append("application", new Blob([JSON.stringify(this.text)], {
-      type: 'application/json'
-    }));
-    formData.append('file', this.uploadForm.get('profile')?.value);
-
-    this.httpClient.post<any>(this.SERVER_URL, formData).subscribe(
-      (res) => console.log(res),
-      (err) => console.log(err)
-    );
-  }
 }
+
+
